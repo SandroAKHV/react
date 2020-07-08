@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
-import HomeScreen from './Screens/HomeScreen';
-import ProductScreen from './Screens/ProductScreen';
-import CartScreen from './Screens/CartScreen';
-import SigninScreen from './Screens/SigninScreen';
+import HomeScreen from './Pages/HomePage';
+import ProductScreen from './Pages/ProductPage';
+import CartScreen from './Pages/CartPage';
+import SigninScreen from './Pages/SigninPage';
 import { useSelector } from 'react-redux';
-import RegisterScreen from './Screens/RegisterScreen';
+import RegisterScreen from './Pages/RegisterPage';
 
 function App() {
 
@@ -28,7 +28,8 @@ function App() {
               &#9776;
         </button>
             <Link to="/" >Shop with us</Link>
-          </div>
+          </div >
+          <div className="shopika">Shopika</div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
             {

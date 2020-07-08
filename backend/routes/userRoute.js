@@ -41,7 +41,7 @@ router.post('/register', async (req, res) => {
       token: getToken(newUser)
     })
   } else {
-    res.status(401).send({ msg: 'Invalid User Data.' });
+    res.status(401).send({ msg: 'Invalid user Data.' });
   }
 
 })
